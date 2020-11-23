@@ -96,3 +96,12 @@ h3 {
 .firma-footer {
     color: #00a6d6;
 }
+
+@media (max-width: 575.9px) {
+    
+    body {
+        background-image: url(./images/background-brain-2.jpg);
+        
+    }
+
+}
