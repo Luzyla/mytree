@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap');
+
+body {
+    background-image: url(./images/background-brain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fafafa;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #00a6d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px cyan;
+}
+
+h1 {
+    font-family: Allura;
+    font-size: 45px;
+    text-shadow: 3px 3px 5px #42424280;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor-img-profile {
+    width: 150px;
+    margin-top: 35px;
+    border-radius: 130px;
+    border: 4px solid #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-profile {
+    width: 150px;
+    border-radius: 120px;
+}
+
+.principal-tree, .contenedor-footer { 
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-link {
+    width: 95%;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #fafafa;
+    border-radius: 10px;
+    background-color: #42424280;
+}
+
+.img-logo {
+    width: 35px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.contenedor-link:hover {
+    background-color: #fafafa;
+    text-shadow: 3px 3px 5px #42424260;
+}
+
+.contenedor-footer {
+    margin-top: 10px;
+}
+
+.firma-footer {
+    color: #00a6d6;
+}
