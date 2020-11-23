@@ -20,10 +20,37 @@ body {
     padding: 0;
 }
 
+/*----------------------------------------------
+                    HEADER 
+----------------------------------------------*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor-img-profile {
+    width: 150px;
+    margin-top: 35px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-profile {
+    width: 150px;
+    border-radius: 120px;
+}
+
+/*----------------------------------------------
+                SECCIÓN PRINCIPAL 
+----------------------------------------------*/
+
 a {
     text-decoration: none;
-    color: #00a6d6;
-    text-shadow: 1px 1px 2px cyan;
+    
 }
 
 .link-redes {
@@ -38,27 +65,9 @@ h1 {
     text-shadow: 3px 3px 5px #42424280;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.contenedor-img-profile {
-    width: 150px;
-    margin-top: 35px;
-    border-radius: 100px;
-    /* border: 4px solid #fafafa; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-profile {
-    width: 150px;
-    border-radius: 120px;
-}
+/*----------------------------------------------
+                TEXTO PRINCIPAL
+----------------------------------------------*/
 
 .principal-tree, .contenedor-footer { 
     width: 360px;
@@ -85,11 +94,18 @@ h1 {
     font-weight: 600;
     font-size: 20px;
     margin-left: 10px;
+    color: #fafafa;
+    text-shadow: 1px 1px 2px cyan;
 }
 
 .contenedor-link:hover {
     background-color: #fafafa;
     text-shadow: 3px 3px 5px #42424260;
+    color: #00a6d6;
+}
+
+.link-redes:hover {
+    color: #00a6d6;
 }
 
 .contenedor-footer {
@@ -105,7 +121,7 @@ h1 {
     body {
         background-image: url(./images/background-brain-2.jpg);
         background-position-x: center;
-        background-position-y: 100%;
+        background-position-y: 100vh;
     }
 
 }
