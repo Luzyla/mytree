@@ -94,19 +94,19 @@ h1 {
     font-weight: 600;
     font-size: 20px;
     margin-left: 10px;
-    color: #fafafa;
-    text-shadow: 1px 1px 2px cyan;
+    color: cyan;
+    /*text-shadow: 1px 1px 2px cyan;*/
 }
 
 .contenedor-link:hover {
     background-color: #fafafa;
-    text-shadow: 3px 3px 5px #42424260;
+    text-shadow: 3px 3px 5px # #00a6d6;
     color: #00a6d6;
 }
 
-.txt-title-link:hover {
+/* .txt-title-link:hover {
     color: #00a6d6;
-}
+} */
 
 /*----------------------------------------------
                     FOOTER
