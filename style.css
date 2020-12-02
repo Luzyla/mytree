@@ -45,6 +45,16 @@ body {
 }
 
 /*----------------------------------------------
+                OVERLAY
+----------------------------------------------*/
+.overlay {
+    width: 100%;
+    background-color: #42424280;
+    position: relative;
+    z-index: 1;
+}
+
+/*----------------------------------------------
                 SECCIÓN PRINCIPAL 
 ----------------------------------------------*/
 
@@ -57,6 +67,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: cyan;
 }
 
 h1 {
@@ -70,11 +81,13 @@ h1 {
 ----------------------------------------------*/
 
 .principal-tree, .contenedor-footer { 
+    position: relative;
     width: 360px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
 }
 
 .contenedor-link {
@@ -84,6 +97,10 @@ h1 {
     border: 2px solid #fafafa;
     border-radius: 10px;
     background-color: #42424280;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cyan;
 }
 
 .img-logo {
@@ -95,25 +112,28 @@ h1 {
     font-size: 20px;
     margin-left: 10px;
     color: cyan;
-    /*text-shadow: 1px 1px 2px cyan;*/
 }
-
+ 
 .contenedor-link:hover {
     background-color: #fafafa;
-    text-shadow: 3px 3px 5px # #00a6d6;
+    /* text-shadow: 3px 3px 5px #00a6d6; */
     color: #00a6d6;
 }
 
-/* .txt-title-link:hover {
+/* .link-redes:hover {
+    background-color: #fafafa;
     color: #00a6d6;
-} */
+}  */
 
 /*----------------------------------------------
                     FOOTER
 ----------------------------------------------*/
 
 .contenedor-footer {
+    width: 360px;
+    background-color: #42424280;
     margin: 30px 0 10px 0;
+    padding: 10px;
 }
 
 .free-resources {
@@ -128,13 +148,62 @@ h1 {
                 RESPONSIVE
 ----------------------------------------------*/
 
-@media (max-width: 580px) {
+@media (min-width: 380px) and (max-width: 580px) {
     
     body {
         background-image: url(./images/background-brain-2.jpg);
         background-position-x: center;
         background-position-y: 100%;
         background-size: auto;
+    }
+
+}
+
+
+@media (max-width: 379.9px) {
+    
+    body {
+        background-image: url(./images/background-brain-2.jpg);
+        background-position-x: center;
+        background-position-y: 100%;
+        background-size: auto;
+    }
+
+    /*----------------------------------------------
+                    TEXTO PRINCIPAL
+    ----------------------------------------------*/
+
+    .principal-tree, .contenedor-footer { 
+        width: 300px;
+    }
+
+    /* .contenedor-link {
+        width: 90%;
+        margin: 5px;
+        padding: 10px;
+        border: 2px solid #fafafa;
+        border-radius: 10px;
+        background-color: #42424280;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: cyan;
+    } */
+
+    /* .img-logo {
+        width: 35px;
+    } */
+
+    .txt-title-link {
+        font-size: 18px;
+    }
+    
+    /*----------------------------------------------
+                        FOOTER
+    ----------------------------------------------*/
+
+    .contenedor-footer {
+        width: 300px;
     }
 
 }
