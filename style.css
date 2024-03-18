@@ -2,16 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap');
 
 body {
-    background-image: url(./images/background-brain.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+    background: linear-gradient(344deg, rgba(72, 61, 139, 1) 0%, rgba(0, 156, 134, 1) 35%, rgba(211, 250, 245, 1) 100%);
     font-family: Montserrat;
     color: #fafafa;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
 }
 
 * {
@@ -31,17 +30,21 @@ body {
 }
 
 .contenedor-img-profile {
-    width: 150px;
-    margin-top: 35px;
-    border-radius: 100px;
+    width: 14rem;
+    margin-top: 2.3rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .img-profile {
-    width: 150px;
-    border-radius: 120px;
+    width: 100%;
+    /* border-radius: 7rem;
+    border: #fafafa 4px solid; */
+}
+
+.contenedor-img-profile-pie {
+    margin: 1rem 0;
 }
 
 /*----------------------------------------------
@@ -60,29 +63,32 @@ body {
 
 a {
     text-decoration: none;
-    
+
 }
 
 .link-redes {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: cyan;
+    color: #d3faf5;
+    width: 100%;
+
 }
 
-h1 {
+.txt-title-ppal {
     font-family: Allura;
-    font-size: 45px;
+    font-size: 3rem;
     text-shadow: 3px 3px 5px #42424280;
+    color: #483d8b;
 }
 
 /*----------------------------------------------
                 TEXTO PRINCIPAL
 ----------------------------------------------*/
 
-.principal-tree, .contenedor-footer { 
+.principal-tree, .contenedor-footer {
     position: relative;
-    width: 360px;
+    width: 24rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -92,118 +98,51 @@ h1 {
 
 .contenedor-link {
     width: 90%;
-    margin: 5px;
-    padding: 10px;
-    border: 2px solid #fafafa;
-    border-radius: 10px;
+    margin: 0.4rem 1rem;
+    padding: 0.7rem;
+    border: 2px solid #d3faf585;
+    border-radius: 0.6rem;
     background-color: #42424280;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: cyan;
+    color: #d3faf5;
+
 }
 
 .img-logo {
-    width: 35px;
+    width: 2rem;
 }
 
 .txt-title-link {
-    font-weight: 600;
-    font-size: 20px;
-    margin-left: 10px;
-    color: cyan;
-}
- 
-.contenedor-link:hover {
-    background-color: #fafafa;
-    /* text-shadow: 3px 3px 5px #00a6d6; */
-    color: #00a6d6;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    color: #d3faf5;
 }
 
-/* .link-redes:hover {
-    background-color: #fafafa;
+.contenedor-link:hover {
+    background-color: #fafafa25;
     color: #00a6d6;
-}  */
+    cursor: pointer;
+}
 
 /*----------------------------------------------
                     FOOTER
 ----------------------------------------------*/
 
 .contenedor-footer {
-    width: 360px;
+    width: 100%;
     background-color: #42424280;
-    margin: 30px 0 10px 0;
-    padding: 10px;
+    margin: 3rem 0 0.6rem 0;
+    padding: 0.3rem;
 }
 
 .free-resources {
-    margin: 10px 0 5px 0;    
+    margin: 0.6rem 0 0.3rem 0;
+    display: none;
 }
 
 .contenedor-footer a {
     color: #00a6d6;
-}
-
-/*----------------------------------------------
-                RESPONSIVE
-----------------------------------------------*/
-
-@media (min-width: 380px) and (max-width: 580px) {
-    
-    body {
-        background-image: url(./images/background-brain-2.jpg);
-        background-position-x: center;
-        background-position-y: 100%;
-        background-size: auto;
-    }
-
-}
-
-
-@media (max-width: 379.9px) {
-    
-    body {
-        background-image: url(./images/background-brain-2.jpg);
-        background-position-x: center;
-        background-position-y: 100%;
-        background-size: auto;
-    }
-
-    /*----------------------------------------------
-                    TEXTO PRINCIPAL
-    ----------------------------------------------*/
-
-    .principal-tree, .contenedor-footer { 
-        width: 300px;
-    }
-
-    /* .contenedor-link {
-        width: 90%;
-        margin: 5px;
-        padding: 10px;
-        border: 2px solid #fafafa;
-        border-radius: 10px;
-        background-color: #42424280;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: cyan;
-    } */
-
-    /* .img-logo {
-        width: 35px;
-    } */
-
-    .txt-title-link {
-        font-size: 18px;
-    }
-    
-    /*----------------------------------------------
-                        FOOTER
-    ----------------------------------------------*/
-
-    .contenedor-footer {
-        width: 300px;
-    }
-
 }
