@@ -3,7 +3,7 @@
 
 body {
     background: linear-gradient(344deg, rgba(72, 61, 139, 1) 0%, rgba(0, 156, 134, 1) 35%, rgba(211, 250, 245, 1) 100%);
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     color: #fafafa;
     display: flex;
     justify-content: center;
@@ -55,6 +55,8 @@ body {
     background-color: #42424280;
     position: relative;
     z-index: 1;
+    color: rgba(0, 156, 134, 0.5);
+    color: hsla(0, 100, 100, 0.8);
 }
 
 /*----------------------------------------------
